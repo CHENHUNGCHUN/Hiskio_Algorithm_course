@@ -45,6 +45,7 @@ F.addEdges(new Edge(C, 2));
 F.addEdges(new Edge(D, 3));
 F.addEdges(new Edge(E, 1));
 
+//MinHeap 大致上跟MaxHeap相反之外,內容差不多(decrease_priority是新的)
 class MinHeap {
   constructor() {
     this.values = [];
