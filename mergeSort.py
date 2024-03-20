@@ -17,6 +17,6 @@ def mergesort(arry):
     right_arry = arry[mid:]
     return merge(mergesort(left_arry),mergesort(right_arry))
 
-
-sortlist=[15,669,45,51,848,6,21,48,954,877,32,54,65,3345,31,248,35,8,518]
-print(mergesort(sortlist))
+if __name__ =='__main__':
+    sortlist=[15,669,45,51,848,6,21,48,954,877,32,54,65,3345,31,248,35,8,518]
+    print(mergesort(sortlist))
