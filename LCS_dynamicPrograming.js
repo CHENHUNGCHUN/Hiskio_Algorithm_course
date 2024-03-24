@@ -45,6 +45,7 @@ function LCS(str1, str2) {
       if (str1[i - 1] == str2[j - 1]) {
         table1[i][j] = 1 + table1[i - 1][j - 1]; //如果兩個相同,則1+左上角的那個數字
         table2[i][j] = "↖";
+        //如果兩個字串不相同的話 直接做table裡面的事情
       } else if (table1[i - 1][j] >= table1[i][j - 1]) {
         table1[i][j] = table1[i - 1][j];
         table2[i][j] = "↑";
