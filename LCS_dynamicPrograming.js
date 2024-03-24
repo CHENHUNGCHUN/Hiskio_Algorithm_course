@@ -5,7 +5,7 @@ let x = "ATTTGGCTA";
 let y = "TTAGCCAT";
 
 LCS(x, y);
-printLCS(x.length, y.length);
+printLCS(x.length, y.length); //因為table的字串都有在最前面被加上空字串,所以不用-1
 console.log(result);
 
 function LCS(str1, str2) {
