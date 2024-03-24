@@ -41,6 +41,7 @@ function LCS(str1, str2) {
   for (let i = 1; i <= m; i++) {
     for (let j = 1; j <= n; j++) {
       //記得現在實際上在處理 table[i][j]的位置
+      //但是因為每個string 前面又被多加了一個空字串,所以 實際上確實是在處理 table[i][j] 但是字串判斷卻是在判斷 i-1 跟 j-1
       if (str1[i - 1] == str2[j - 1]) {
         table1[i][j] = 1 + table1[i - 1][j - 1]; //如果兩個相同,則1+左上角的那個數字
         table2[i][j] = "↖";
