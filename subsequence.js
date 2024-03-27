@@ -39,6 +39,11 @@ string2 = "abc";
 y = subsequence(string1, string2);
 console.log(y);
 
+<<<<<<< HEAD
 
 //this is conflict 
+=======
+//conflict no.2
+
+>>>>>>> 29e2a8ca166242960a51e143782d5348d8975ec1
 
