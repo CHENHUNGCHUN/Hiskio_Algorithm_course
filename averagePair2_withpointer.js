@@ -23,3 +23,8 @@ function averagePair(arr, avg) {
   console.log(result);
   return result;
 }
+
+
+
+
+//hello
