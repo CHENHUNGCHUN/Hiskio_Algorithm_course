@@ -1,15 +1,15 @@
 function binarySearch(arr, low, top, n) {
-  let mid = Math.floor((low + top) / 2);
-  while (low < top) {
-    if (arr[mid] === n) {
-      return mid;
-    } else if (n < arr[mid]) {
-      return binarySearch(arr, low, mid - 1, n);
-    } else if (n > arr[mid]) {
-      return binarySearch(arr, mid + 1, top, n);
-    }
+  if (low > top) {
+    return -1;
   }
-  return -1;
+  let mid = Math.floor((low + top) / 2);
+  if (arr[mid] === n) {
+    return mid;
+  } else if (n < arr[mid]) {
+    return binarySearch(arr, low, mid - 1, n);
+  } else if (n > arr[mid]) {
+    return binarySearch(arr, mid + 1, top, n);
+  }
 }
 
 let numbers = [
@@ -22,5 +22,5 @@ let numbers = [
   285, 295, 297, 298,
 ];
 
-x = binarySearch(numbers, 0, numbers.length - 1, 297);
+x = binarySearch(numbers, 0, numbers.length - 1, 9);
 console.log(x);

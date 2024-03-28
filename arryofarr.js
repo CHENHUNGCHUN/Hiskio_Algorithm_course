@@ -2,8 +2,8 @@ let result = [];
 
 function arrOfarr(arr) {
   if (typeof arr === "string") {
-    result.push(arr[0]);
-    return true;
+    result.push(arr);
+    return result;
   }
   for (let i = 0; i < arr.length; i++) {
     arrOfarr(arr[i]);
