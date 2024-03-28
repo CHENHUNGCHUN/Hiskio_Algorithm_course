@@ -48,5 +48,5 @@ console.log(typeof arr[0][0][0][0][0] === "array");
 */
 
 let arrs = [[[["a", [["b", ["c"]], ["d"]]], [["e"]], [[["f", "g", "h"]]]]]];
-x = colloector(arrs);
+x = arrOfarr(arrs);
 console.log(x);
