@@ -6,7 +6,7 @@ function selectSort(arr) {
     //先找最小值
     let min = Infinity;
     let minIndex = 0;
-    //因為跑完一次for loop 代表排好一個元素了,所以i的起始值會是目前執行的次數
+    //因為跑完一次for loop 代表排好一個元素了,所以i的起始值會是目前執行的index
     for (let i = j; i <= arr.length - 1; i++) {
       if (arr[i] < min) {
         min = arr[i];
