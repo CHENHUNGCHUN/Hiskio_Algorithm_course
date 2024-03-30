@@ -1,7 +1,7 @@
 function partition(p, r) {
   let x = arr[r]; //Piovt
   let i = p - 1; //index or 計算有多少比Pivot小的值
-  for (let j = p; j < r - 1 /*因為最後一個是Pivot 所以不檢查 ,所以 -1*/; j++) {
+  for (let j = p; j <= r - 1 /*因為最後一個是Pivot 所以不檢查 ,所以 -1*/; j++) {
     if (arr[j] <= x /*如果element比Pivot小或等於 ,i就+1*/) {
       i++;
       //swap arr[i] and arr[j]
