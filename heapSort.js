@@ -2,6 +2,7 @@ let arr = [6, 13, 10, 4, 1, 5, 2, 8, 14, 9, 11, 7, 3, 15, 12];
 
 function buildMaxHeap() {
   heapSize = arr.length - 1;
+  //Math.floor(heapSize / 2)其實就是parent node,所以其實就是找最後一個parent node開始 一路往前面去整理
   for (let i = Math.floor(heapSize / 2); i >= 0; i--) {
     maxheapify(i);
   }
