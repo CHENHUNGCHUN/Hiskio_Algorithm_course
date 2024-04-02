@@ -38,6 +38,7 @@ class BinarySearchTree:
             self.inorder(node.left)
             self.path += str(node.value) + " "
             self.inorder(node.right)
+
     def posetorder(self,node:Node):
         if node != None:
             self.posetorder(node.left)
@@ -54,7 +55,6 @@ class BinarySearchTree:
             if currentNode.right != None:
                 queue.append(currentNode.right)
             self.bftt.append(currentNode.value)
-
 
     def SearchTree(self,node:Node,key:int):
         if node== None or node.value == key:
