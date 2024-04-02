@@ -26,8 +26,7 @@ def maxheapify(n,arr_langh):
         maxheapify(largest,arr_langh)
 
 
-
-arr = [15,669,45,51,848,6,21,48,954,877,32,54,65,3345,31,248,35,8,9999]
-
-heapsort()
-print(arr)
+if __name__ == '__main__':
+    arr = [15,669,45,51,848,6,21,48,954,877,32,54,65,3345,31,248,35,8,9999]
+    heapsort()
+    print(arr)

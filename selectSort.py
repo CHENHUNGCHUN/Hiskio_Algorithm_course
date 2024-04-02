@@ -10,5 +10,7 @@ def selectSort(arr:list)->list:
                 idx = j
         arr[i],arr[idx] = arr[idx],arr[i]
 
-selectSort(arr)
-print(arr)
+
+if __name__ == '__main__':
+    selectSort(arr)
+    print(arr)

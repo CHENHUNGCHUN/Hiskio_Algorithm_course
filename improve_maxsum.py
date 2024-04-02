@@ -14,6 +14,7 @@ def maxSum(arr,n):
 
     return max
 
-print(maxSum(arr, 6))
+if __name__ == '__main__':
+    print(maxSum(arr, 6))
 
 

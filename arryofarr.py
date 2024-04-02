@@ -8,5 +8,6 @@ def arryofarry(arr:list)->list:
         else:
             result.append(arr[i])
 
-arryofarry(arrs)
-print(result)
+if __name__ == '__main__':
+    arryofarry(arrs)
+    print(result)
