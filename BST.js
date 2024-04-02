@@ -121,3 +121,7 @@ console.log(result3);
 
 let result4 = bst.searchIteratively(bst.root, 13);
 console.log(result4);
+
+
+bst.postOrder(bst.root);
+console.log(bst.path);
