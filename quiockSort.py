@@ -9,7 +9,7 @@ def partition(l:int,r:int)->int:
     pivot = arr[r]
     x = l-1
     for i in range(l,r-1,1):
-        if arr[i] < pivot:
+        if arr[i] <= pivot:
             x += 1
             arr[i],arr[x] = arr[x],arr[i]
     pivot,arr[x+1] = arr[x+1],pivot
