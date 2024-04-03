@@ -68,9 +68,9 @@ result2 = []
 def BFT(node:Node): #廣度優先
     queue = []
     queue.append(node)
+    node.visited = True
     while len(queue) != 0:
         firstNode = queue.pop(0)
-        firstNode.visited = True
         result2.append(firstNode.value)
         for i in range(0,len(firstNode.neighbors),1):
             if firstNode.neighbors[i].visited == False:
