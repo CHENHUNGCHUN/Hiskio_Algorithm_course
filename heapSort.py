@@ -2,11 +2,11 @@ def heapsort():
     buidmaxheap()
     for i in range(len(arr)-1,-1,-1):
         arr[0] ,arr[i] =arr[i],arr[0]
-        maxheapify(0,i-1)
+        maxheapify(0,i-1) #每循環一次,因為最後一個元素不再進行maxheapify(最大值),所以每次長度都固定少一
 
 def buidmaxheap():
     for i in range((len(arr)-1)//2,0-1,-1):
-        maxheapify(i,(len(arr)-1))
+        maxheapify(i,(len(arr)-1)) #len(arr)-1純粹是讓maxheapify的 l 跟r限定在list內
 
 
 def maxheapify(n,arr_langh):
